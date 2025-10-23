@@ -10,7 +10,7 @@ if (shouldWePlay.toLocaleLowerCase() === "yes") {
   if (leftOrRight.toLocaleLowerCase ()=== "left") {
     console.log("you go left and see a bridge.....");
     const cross = prompt("Do you want to cross the bridge");
-    if (cross === "yes") {
+    if (cross.toLocaleLowerCase() === "yes" || cross.toLocaleLowerCase() === "y" || cross.toLocaleLowerCase() ==="ok") {
       console.log(
         "You cross the but bridge was week and broke and you fell.. you lost."
       );
